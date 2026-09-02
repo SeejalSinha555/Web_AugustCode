@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body{
+            background-color: #677295;
+            padding: 0;
+            margin: 0;
+        }
+        #dashboard{
+            display: grid;
+            gap: 2px;
+        }
+        .sdb{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            width: 100%;
+        }
+        .abc{
+            background: #20232d;
+            color: white;
+            border: 1px solid #3b3e49;
+            border-radius: 14px;
+            padding: 25px;
+            min-height: 145px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+        .bcd{
+            background: #20232d;
+            color: white;
+        }
+            
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+           <li><a href="#employees">Employees</a></li> 
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#payroll">Payroll</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section id="dashboard">
+            <div>
+                <h1>Employee Management</h1>
+                <p>12 total employees across 9 departments</p>
+                <button>+ Add Employee</button>
+                </div>
+                <div class="sdb">
+                <div class="abc">
+                    <h3>12</h3>
+                    <p>total employees</p>
+                    <p>+3 this month</p>
+                </div>
+                <div class="abc">
+                    <h3>9</h3>
+                    <p>Active</p>
+                    <p>75% of workforce</p>
+                </div>
+                <div class="abc">
+                    <h3>2</h3>
+                    <p>On Leave</p>
+                    <p>Currently absent</p>
+                </div>
+                <div class="abc">
+                    <h3>$124k</h3>
+                    <p>Avg. Salary</p>
+                    <p>Annual base</p>
+                </div>
+                </div>
+                <div class="container">
+                    <div class="bcd"><button>Search name, role, department... </button></div>
+                    <div class="bcd">All</div>
+                    <div class="bcd">All</div>
+                    </div>
+                
+            
+        </section>
+    </main>
+</body>
+</html>
